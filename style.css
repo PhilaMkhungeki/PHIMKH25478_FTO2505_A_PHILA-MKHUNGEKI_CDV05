@@ -1,0 +1,140 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: linear-gradient(rgb(99, 97, 97), rgb(75, 43, 52)); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.navbar{
+    width: 200px;
+    background-color: black;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    z-index: 1000;
+}
+
+.navbar h1{
+    color: whitesmoke;
+    text-align: center;
+}
+
+.navbar ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0 0;
+    flex-grow: 1;
+}
+
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    
+}
+
+.navbar ul li a:hover{
+    background-color: brown;
+}
+
+section{
+    scroll-snap-align: start;
+    height: 100vh;
+    padding: 3rem;
+    margin-left: 200px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 1s ease;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+
+section.active{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.main{
+    font-weight: bold;
+    font-size: 6rem;
+    text-align: center;
+    text-shadow: 5px 1px 8px black;
+    transform: skewX(15deg);
+}
+
+.about{
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/*skills section styling*/
+#skills img {
+    height: 40px;
+    width: 50px;
+}
+
+.tools {
+    display: flex;
+}
+
+/*Contact section styling*/
+#email {
+    width: 40%;
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 8px;
+    background: transparent;
+}
+
+#message {
+    width: 40%;
+    padding: 8px;
+    margin-bottom: 10px;
+    background: transparent;
+    border: none;
+    border-top: 2px solid #242424;
+    border-left: 2px solid #242424;
+    border-bottom: 2px solid #7c7b7b;
+    border-right: 2px solid #7c7b7b;
+}
+
+.button {
+    width: 70px;
+    height: 20px;
+   background-color: #000;
+   color: #fff;
+   border: none;
+   border-radius: 10px;
+   box-shadow: 0 0 2px #DADADA;
+   margin-left: 360px;
+}
+
+.button:hover {
+    box-shadow: 0 2px 3px #DADADA;
+}
+
+#contacts img {
+    height: 40px;
+    width: 50px;
+}
+
+#contacts img:hover {
+    transition: 0.5s ease;
+    opacity: 0.8;
+}
+
