@@ -3,29 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <h1>Phila Mkhungeki</h1>
-        <ul>
-            <li><a href="#index">Home</a></li>
-            <li><a href="#aboutMe">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contacts">Contacts</a></li>
+    <nav >  
+        <div class="navbar">
+            <h1>Phila Mkhungeki</h1>
+            <ul>
+                <li><a href="#index">Home</a></li>
+                <li><a href="#aboutMe">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+
+            <!--Footer section on the side bar-->
+            <footer class="navbar-footer">
+                <p>&copy; 2025 - Phila Mkhungeki</p>
+            </footer>
+        </div>
+        <!--navugation for small screen sizes-->
+        <ul id="mobile-menu">
+                <li><a href="#index">Home</a></li>
+                <li><a href="#aboutMe">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contacts</a></li>
         </ul>
     </nav>
     
     <section id="index">
-        <p class="main">Hi, I am an aspiring Software Developer</p>
-        <p class="about">Welcome to my career portfolio, I am a Software Developer student, who aspires to be a part of the tech industry in solving business challenges through innovative technology and working on industry defining projects. As of yet I do not have any work experience as a software developer I have only worked on school projects and others of my own that I test my skills on.</p>
+        <div class="menu-icon">
+            <img src="icons/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" id="menu" alt="menu">
+             <p class="main">Hi, I am an aspiring Software Developer</p>
+        </div>
+        <p class="about">Welcome to my career portfolio, I am a Software Developer student, who aspires to be a part of the tech industry to solve business challenges through innovative technology and working on industry defining projects.</p>
     </section>
         
     <section id="aboutMe">
-        <p>As a software developer I design and create websites. I am a confident front-end developer that can design and create responsive websites. My long term goal is to be a full stack developer.</p>
-        <p>-----Incoporate a SMART section in my portfolio: personal qualities (strengths, weaknesses, interests, values)-----</p>
+        <p>I am a confident front-end developer with in-depth knowledge of Advanced HTML5, CSS3,Javascript. As of yet I do not have any professional 
+            work experience as a software developer, I have only worked on school projects and others of my own that I test my skills on. I am currently
+             pursuing my certification in software development at CodeSpace Academy. I enjoy putting ideas into vision and that is what I have been 
+             harnessing my skills on and I am passinate to learn more to gain a deeper understanding in software development.</p>
+
+        <p>I am also a curious and solution driven individual who enjoys tackling problems with a logical and creative mindset. One of my key strengths is
+             my ability to learn and adapt to new tools and environments, which fuels my passion for continuous improvement. While I sometimes 
+             struggle with overthinking or delaying tasks when under pressure or when tasks seem to be harder than usuall, I actively work on managing my time and expectations more effectively. 
+             I am especially interested in building web applications that are not only functional but also meaningful to real users. I value integrity, 
+             collaboration, and growth both personal and professional and I strive to bring purpose into everything I build.</p>
     </section>
 
     <section id="skills">
@@ -38,6 +64,11 @@
             <li>Visual Basic</li>
             <li>C</li>
             <li>Javascript</li>
+        </ul>
+
+        <h4>Frameworks</h4>
+        <ul>
+            <li>Tailwind CSS</li>
         </ul>
 
         <h4>Tools</h4>
@@ -62,8 +93,12 @@
         <a href="http://github.com/PhilaMkhungeki" target="_blank">
             <img src="https://devicon-website.vercel.app/api/github/original.svg" alt="github"></img>
         </a>
+
+        <div class="large-screen-footer">
+            <p>&copy; 2025 - Phila Mkhungeki</p>
+        </div>
     </section>
-    
+
     <script src="script.js"></script>
 </body>
 </html>

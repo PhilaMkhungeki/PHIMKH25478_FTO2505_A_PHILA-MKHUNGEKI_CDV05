@@ -13,3 +13,13 @@
  sections.forEach(section => {
     observer.observe(section);
  }); 
+
+ //make the menu icon clickable to show menu items
+
+ const menu = document.getElementById("menu");
+ const mobileMenu = document.getElementById("mobile-menu");
+
+ menu.addEventListener('click', function() {
+    mobileMenu.classList.toggle("show");
+    console.log("icon clicked!");
+ });

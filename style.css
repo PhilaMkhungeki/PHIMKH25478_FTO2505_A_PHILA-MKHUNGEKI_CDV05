@@ -10,7 +10,7 @@ html,body{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
+/*sidebar styling*/
 .navbar{
     width: 200px;
     background-color: black;
@@ -48,6 +48,17 @@ html,body{
     background-color: brown;
 }
 
+.navbar-footer {
+    color: #FFF;
+    width: 70%;
+    font-size: 13px;
+    padding: 10px;
+}
+
+#mobile-menu {
+    display: none;
+}
+
 section{
     scroll-snap-align: start;
     height: 100vh;
@@ -57,15 +68,17 @@ section{
     display: flex;
     flex-direction: column;
     opacity: 0;
-    transform: translateY(60px);
-    transition: all 1s ease;
-    border-bottom-right-radius: 10%;
-    border-bottom-left-radius: 10%;
+    transform: translateY(40px);
+    transition: all 0.6s ease;
 }
 
 section.active{
     opacity: 1;
     transform: translateY(0);
+}
+
+.menu-icon img{
+    display: none;
 }
 
 .main{
@@ -80,6 +93,11 @@ section.active{
     font-size: 1.5rem;
     margin-top: 20px;
     text-align: center;
+}
+
+/*About me section styling*/
+#aboutMe {
+    font-size: 1.5rem;
 }
 
 /*skills section styling*/
@@ -138,3 +156,69 @@ section.active{
     opacity: 0.8;
 }
 
+.large-screen-footer {
+    display: none;
+}
+
+/* Media queries for screen size responsiveness*/
+@media (max-width: 700px) {
+    .navbar {
+        display: none;
+    }
+
+    #mobile-menu {
+        display: none; /* Hide list initially */
+        position: absolute;
+        top: 10px;
+        left: 65px;
+        width: 80%;
+        background: transparent;
+        padding: 10px 0;
+        z-index: 999;
+        list-style: none;
+        
+    }
+
+    #mobile-menu.show {
+        display: flex; /* Show when toggled */
+        align-items: center;
+        gap: 10px;
+    }
+
+    #mobile-menu li a {
+        color: white;
+        text-decoration: none;    
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        padding-top: 0;
+        padding-bottom: 50px;
+    }
+
+    section {
+        padding: 1rem;
+        margin-left: 0;
+    }
+
+    .menu-icon{
+        display: flex;
+    }
+
+    .menu-icon img{
+        display: block;
+        width: 180px;
+        height: 50px;
+    }
+
+    .button{
+        margin-left: 220px;
+    }
+
+    .large-screen-footer {
+        display: block;
+        margin-top: 720px;
+    }
+
+
+}
