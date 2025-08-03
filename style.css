@@ -227,12 +227,17 @@ section.active{
         padding-top: 80px;
     }
 
+    #email {
+        width: 70%;
+    }
+
     #message {
         padding-bottom: 40px;
+        width: 70%;
     }
 
     .button{
-        margin-left: 220px;
+        margin-left: 500px;
     }
 
     .large-screen-footer {
