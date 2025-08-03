@@ -227,17 +227,17 @@ section.active{
         padding-top: 80px;
     }
 
+    #message {
+        padding-bottom: 40px;
+    }
+
     .button{
         margin-left: 220px;
     }
 
-    #contacts {
-        height: 70vh;
-    }
-
     .large-screen-footer {
         display: flex;
-        margin-top: 650px;
+        margin-top: 450px;
         justify-content: center;
         margin-bottom: 70px;
     }
