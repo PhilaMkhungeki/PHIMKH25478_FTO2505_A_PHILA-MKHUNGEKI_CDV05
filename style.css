@@ -228,6 +228,10 @@ section.active{
         padding-top: 80px;
     }
 
+    #aboutMe {
+        font-size: 1rem;
+    }
+
     #email {
         width: 70%;
     }
