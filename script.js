@@ -18,16 +18,3 @@
 
  const menu = document.getElementById("menu");
  const mobileMenu = document.getElementById("mobile-menu");
-
- menu.addEventListener('click', function() {
-    mobileMenu.classList.toggle("show");
-    console.log("icon clicked!");
- });
-
- //small screen responsiveness
-
- const mobileNav = document.getElementById("menu");
-  
-mobileNav.addEventListener('click', function() {
-    alert("Icon clicked!");
-});
