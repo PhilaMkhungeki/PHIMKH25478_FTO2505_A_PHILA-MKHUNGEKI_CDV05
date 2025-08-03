@@ -179,6 +179,7 @@ section.active{
 
     .header h1 {
         margin-right: 50px;
+        font-size: 23px;
     }
 
     .menu-icon {
@@ -237,7 +238,7 @@ section.active{
     }
 
     .button{
-        margin-left: 500px;
+        margin-left: 280px;
     }
 
     .large-screen-footer {
