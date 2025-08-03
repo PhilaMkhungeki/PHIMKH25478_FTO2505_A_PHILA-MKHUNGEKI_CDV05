@@ -195,8 +195,7 @@ section.active{
         background: transparent;
         padding: 10px 0;
         z-index: 999;
-        list-style: none;
-        
+        list-style: none; 
     }
 
     #mobile-menu.show {
@@ -215,6 +214,13 @@ section.active{
         padding-bottom: 50px;
     }
 
+    .main{
+        font-weight: bold;
+        font-size: 6rem;
+        text-align: center;
+        text-shadow: 5px 1px 8px black;
+    }
+
     section {
         padding: 1rem;
         margin-left: 0;
@@ -229,6 +235,7 @@ section.active{
         display: flex;
         margin-top: 650px;
         justify-content: center;
+        margin-bottom: 50px;
     }
 
 
