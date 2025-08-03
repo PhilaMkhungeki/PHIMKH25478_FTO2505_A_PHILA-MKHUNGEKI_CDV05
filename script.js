@@ -23,3 +23,11 @@
     mobileMenu.classList.toggle("show");
     console.log("icon clicked!");
  });
+
+ //small screen responsiveness
+
+ const mobileNav = document.getElementById("menu");
+  
+mobileNav.addEventListener('click', function() {
+    alert("Icon clicked!");
+});

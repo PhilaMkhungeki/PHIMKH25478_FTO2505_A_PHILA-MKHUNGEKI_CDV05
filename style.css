@@ -187,6 +187,10 @@ section.active{
         height: 65px;
     }
 
+    .menu-icon:hover {
+        box-shadow: 0 0 3px;
+    }
+
     #mobile-menu {
         display: none; /* Hide list initially */
         position: absolute;
