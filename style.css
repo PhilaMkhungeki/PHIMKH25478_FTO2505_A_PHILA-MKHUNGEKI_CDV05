@@ -231,12 +231,15 @@ section.active{
         margin-left: 220px;
     }
 
+    #contacts {
+        height: 70vh;
+    }
+
     .large-screen-footer {
         display: flex;
         margin-top: 650px;
         justify-content: center;
         margin-bottom: 70px;
-        height: 60px;
     }
 
 
