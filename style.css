@@ -109,10 +109,6 @@ section.active{
     width: 50px;
 }
 
-.tools {
-    display: flex;
-}
-
 /*Contact section styling*/
 #email {
     width: 40%;
@@ -230,7 +226,7 @@ section.active{
 
     .main{
         font-weight: bold;
-        font-size: 4rem;
+        font-size: 3rem;
         text-align: center;
         text-shadow: 5px 1px 8px black;
     }
@@ -290,5 +286,13 @@ section.active{
     .close-icon {
         display: none;
         height: 40px;
+        padding-top: 8px;
+    }
+
+    #skills ul {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 4rem;
+        padding: 6px;
     }
 }
