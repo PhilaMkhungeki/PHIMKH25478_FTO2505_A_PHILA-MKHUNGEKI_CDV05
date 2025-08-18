@@ -15,6 +15,18 @@
  }); 
 
  //make the menu icon clickable to show menu items
+const menu = document.getElementById("menu");
+const mobileMenu = document.getElementById("mobile-menu");
+const closeMenu = document.getElementById("closeIcon");
 
- const menu = document.getElementById("menu");
- const mobileMenu = document.getElementById("mobile-menu");
+menu.addEventListener('click', () => {
+    mobileMenu.style.display = 'block';
+    menu.style.display = 'none';
+    closeMenu.style.display = 'block';
+});
+
+closeMenu.addEventListener('click', function() {
+    menu.style.display = 'block';
+    mobileMenu.style.display = 'none';
+    closeMenu.style.display = 'none';
+});
