@@ -30,3 +30,24 @@ closeMenu.addEventListener('click', function() {
     mobileMenu.style.display = 'none';
     closeMenu.style.display = 'none';
 });
+
+//contact form submission
+const form = document.querySelector("form");
+
+form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    const response = await fetch(form.section, {
+        method: "POST",
+        body: formData,
+        headers: {"accept": "application/json"}
+    });
+
+    if(response.ok) {
+        alert("Thank you! Your message has been sent.")
+        form.reset();
+    } else {
+        alert("Oops! Something went wrong. Please try again.");
+    }
+});

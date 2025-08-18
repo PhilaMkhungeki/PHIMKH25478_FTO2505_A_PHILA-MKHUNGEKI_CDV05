@@ -110,7 +110,12 @@ section.active{
 }
 
 /*Contact section styling*/
-#email {
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+form .email {
     width: 40%;
     height: 30px;
     margin-bottom: 10px;
@@ -118,7 +123,7 @@ section.active{
     background: transparent;
 }
 
-#message {
+form .message {
     width: 40%;
     padding: 8px;
     margin-bottom: 10px;
