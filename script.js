@@ -38,16 +38,26 @@ form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     const formData = new FormData(form);
-    const response = await fetch(form.section, {
-        method: "POST",
-        body: formData,
-        headers: {"accept": "application/json"}
-    });
+    try {
+        const response = await fetch(form.action, {
+            method: "POST",
+            body: formData,
+            headers: { "accept": "application/json" }
+        });
 
-    if(response.ok) {
-        alert("Thank you! Your message has been sent.")
-        form.reset();
-    } else {
-        alert("Oops! Something went wrong. Please try again.");
+        if(response.ok) {
+            alert("Thank you! Your message has been sent.")
+            form.reset();
+        } else {
+            const data = await response.json();
+            if(Object.hasOwn(data, 'errors')) {
+                alert(data["errors"].map(error => error["message"]).join(", "));
+            } else {
+                alert("Oops! Something went wrong. Please try again.");
+            }
+        }
+    } catch (error) {
+        alert("A network error occured.");
     }
+    
 });
