@@ -63,16 +63,16 @@ section{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    opacity: 0;
+    /*opacity: 0;*/
     transform: translateY(10px);
     transition: all 0.6s ease;
     padding-top: 60px;
 }
-
+/*
 section.active{
     opacity: 1;
     transform: translateY(0);
-}
+} */
 
 .main{
     font-weight: bold;
@@ -113,6 +113,15 @@ section.active{
 form {
     display: grid;
     grid-template-columns: 1fr;
+}
+
+form p a{
+    text-decoration: none;
+    color: #000;
+}
+
+form p a:hover {
+    color: #242424;
 }
 
 form .email {
@@ -187,10 +196,15 @@ form .message {
 }
 
 .project1 img {
-    width: 250px;
+    width: 260px;
     height: 200px;
     border-radius: 5px;
     margin-top: 25px;
+}
+
+.project1 p {
+    text-align: center;
+    margin-top: 5px;
 }
 
 .close-icon {
@@ -244,6 +258,10 @@ form .message {
 
     #aboutMe {
         font-size: 1.2rem;
+    }
+
+    .more {
+        display: none;
     }
 
     #email {
