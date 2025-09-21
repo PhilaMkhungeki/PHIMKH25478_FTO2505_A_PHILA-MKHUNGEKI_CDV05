@@ -6,5 +6,5 @@ A portfolio website to showcase my projects, skills, and contact information.
     Javascript
 
 ## Link to the portfolio
-   myportfolio-silk-phi.vercel.app
+   <a href="http://myportfolio-silk-phi.vercel.app" target="_blank">View</a>
 
