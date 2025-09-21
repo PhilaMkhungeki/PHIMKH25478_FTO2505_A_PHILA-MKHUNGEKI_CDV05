@@ -178,7 +178,7 @@ form .message {
 }
 
 /*Projects styling*/
-.project1 {
+.project {
     width: 300px;
     height: 270px;
     background-color: #7e656562;
@@ -189,20 +189,20 @@ form .message {
     border-radius: 15px;
 }
 
-.project1:hover{
+.project:hover{
     box-shadow: 0 0 3px;
     transform: scale(1.02);
     transition: 0.4s ease-in;
 }
 
-.project1 img {
+.project img {
     width: 260px;
     height: 200px;
     border-radius: 5px;
     margin-top: 25px;
 }
 
-.project1 p {
+.project p {
     text-align: center;
     margin-top: 5px;
 }
