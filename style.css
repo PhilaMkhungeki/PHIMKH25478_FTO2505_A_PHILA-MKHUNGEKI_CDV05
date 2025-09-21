@@ -328,4 +328,18 @@ form .message {
         gap: 4rem;
         padding: 6px;
     }
+
+    .project img {
+        width: 200px;
+        height: 180px;
+        border-radius: 5px;
+        margin-top: 25px;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+    }
 }
