@@ -6,10 +6,7 @@ html,body{
     scroll-behavior: smooth;
     overflow-y: scroll;
     overflow-x: hidden;
-   /* background: linear-gradient(rgb(189, 119, 119), rgb(85, 35, 49));  */
-    background-color: #C4A484;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: #1C1C28;
 }
 /*sidebar styling*/
 .navbar{
@@ -42,11 +39,10 @@ html,body{
     text-decoration: none;
     padding: 10px 15px;
     display: block;
-    
 }
 
 .navbar ul li a:hover{
-    background-color: brown;
+    background-color: #9E1C60;
 }
 
 .navbar-footer {
@@ -64,10 +60,14 @@ section{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    /*opacity: 0;*/
     transform: translateY(10px);
     transition: all 0.6s ease;
     padding-top: 60px;
+    background-color: #232333;
+}
+
+section h1 {
+    color: white;
 }
 
 .main{
@@ -75,27 +75,45 @@ section{
     font-size: 6rem;
     text-align: center;
     color: white;
+    text-shadow: 0 0 10px rgba(143, 63, 123, 0.6);
 }
 
 .about{
     font-size: 1.8rem;
     margin-top: 20px;
     text-align: center;
-    color: white;
+    color: #DD7BDf;
     opacity: 2.8;
 }
 
 /*About me section styling*/
-#aboutMe {
+.about-me {
+    margin: 0 auto;
+    background-color: #1C1C28;
     font-size: 1.5rem;
     color: white;
+    line-height: 1.4;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
 }
 
 /*skills section styling*/
+.stack {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
 #skills ul {
     display: grid;
     grid-template-columns: repeat(5, auto);
     gap: 4rem;
+    background-color: #1C1C28;
+    border-radius: 20px;
+    height: 270px;
+    padding-top: 20px;
+   
 }
 
 #skills ul li{
@@ -115,7 +133,7 @@ form {
 
 form p a{
     text-decoration: none;
-    color: #000;
+    color: #fff;
 }
 
 form p a:hover {
@@ -128,7 +146,6 @@ form .email {
     margin-bottom: 10px;
     padding: 8px;
     background: transparent;
-    
 }
 
 form .message {
@@ -146,12 +163,12 @@ form .message {
 .button {
     width: 70px;
     height: 20px;
-   background-color: #000;
-   color: #fff;
-   border: none;
-   border-radius: 10px;
-   box-shadow: 0 0 2px #DADADA;
-   margin-left: 360px;
+    background-color: #DD7BDF;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px #DADADA;
+    margin-left: 360px;
 }
 
 .button:hover {
@@ -168,6 +185,21 @@ form .message {
     opacity: 0.8;
 }
 
+.contact-section p {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.contact-section h4 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.socials {
+    display: flex;
+    gap: 15px;
+}
+
 .large-screen-footer {
     display: none;
 }
@@ -177,9 +209,28 @@ form .message {
 }
 
 /*Projects styling*/
-.projects {
+.projects-section{ 
+    position: relative;
+}
+
+.projects { 
     display: flex;
     gap: 1rem;
+    width: calc(250px * 18);
+    animation: scroll 100s linear infinite;
+}
+
+.projects:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 9));
+    }
 }
 
 .project {
