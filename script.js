@@ -17,6 +17,33 @@ closeMenu.addEventListener('click', function() {
     closeMenu.style.display = 'none';
 });
 
+//smooth project scroll 
+const projectsWrapper = document.querySelector('.projects-wrapper');
+
+let autoScroll;
+let isInteracting = false;
+
+function startAutoScroll() {
+    autoScroll = setInterval(() => {
+        if (!isInteracting) {
+            projectsWrapper.scrollLeft += 1;
+        }
+    }, 60);
+}
+
+startAutoScroll();
+
+/*Pause when user interacts*/
+["mouseup", "mouseleave"].forEach(event => {
+    projectsWrapper.addEventListener(event, () => {
+        isInteracting = false;
+    });
+});
+
+if(projectsWrapper.scrollLeft >= projectsWrapper.scrollWidth - projectsWrapper.clientWidth) {
+    projectsWrapper.scrollLeft = 0;
+}
+
 //contact form submission
 const form = document.querySelector("form");
 

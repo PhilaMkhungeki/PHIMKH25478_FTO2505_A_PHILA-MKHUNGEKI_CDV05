@@ -213,23 +213,33 @@ form .message {
     position: relative;
 }
 
-.projects { 
-    display: flex;
-    gap: 1rem;
-    width: calc(250px * 18);
-    animation: scroll 200s linear infinite;
-}
-
-.projects:hover {
+.projects-.projects-wrapper:hover .projects {
     animation-play-state: paused;
 }
 
+.projects-wrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    cursor: grab;
+}
+
+.projects-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.projects { 
+    display: flex;
+    gap: 1rem;
+    width: max-content;
+}
+
 @keyframes scroll {
-    0% {
+    from {
         transform: translateX(50px);
     }
-    100% {
-        transform: translateX(calc(-250px * 9));
+    to {
+        transform: translateX(-50%);
     }
 }
 
