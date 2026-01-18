@@ -217,7 +217,7 @@ form .message {
     display: flex;
     gap: 1rem;
     width: calc(250px * 18);
-    animation: scroll 100s linear infinite;
+    animation: scroll 200s linear infinite;
 }
 
 .projects:hover {
@@ -226,7 +226,7 @@ form .message {
 
 @keyframes scroll {
     0% {
-        transform: translateX(0);
+        transform: translateX(50px);
     }
     100% {
         transform: translateX(calc(-250px * 9));
