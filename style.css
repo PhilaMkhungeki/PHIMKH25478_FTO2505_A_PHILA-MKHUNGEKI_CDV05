@@ -386,8 +386,9 @@ form .message {
     #skills ul {
         display: grid;
         grid-template-columns: repeat(3, auto);
-        gap: 4rem;
+        gap: 3rem;
         padding: 6px;
+        height: 370px;
     }
 
     .project img {
